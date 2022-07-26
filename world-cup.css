@@ -47,7 +47,7 @@ a {
     border-radius: 15px;
     display: flex;
     justify-content: space-around;
-    padding: 3% 3% 0 0%;
+    padding: 5% 15% 0 5%;
 
 }
 
@@ -67,12 +67,59 @@ a {
 
 /*-----------main-section------------ */
 main {
-    background-color: royalblue;
     grid-area: m;
 }
 
+#main-functions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+}
+
+.main-function {
+    border: 1px solid gray;
+    border-radius: 18px;
+    font-weight: 600;
+}
+
+.main-function img {
+    width: 100%;
+}
+
+.blogs {
+    padding: 20px;
+}
+
+.information {
+    display: flex;
+    gap: 3%;
+}
+
 /*-----------footer-area------------ */
+
 footer {
-    background-color: aqua;
+    height: 444px;
+    background-color: #161616;
     grid-area: f;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 8%;
+}
+
+hr {
+    margin-top: 2%;
+    width: 70%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    ;
+}
+
+#bottom {
+    margin-top: 5%;
+}
+
+#content {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    gap: 3%;
 }
