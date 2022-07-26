@@ -21,7 +21,9 @@ body {
 }
 
 /*-----------top-banners------------ */
-
+h1 {
+    font-size: 60PX;
+}
 
 a {
     color: #FFFFFF;
@@ -40,6 +42,7 @@ a {
 #top-banners {
     color: #FFFFFF;
     grid-area: b;
+    margin: 60px 80px 120px 80px;
 }
 
 #backround {
@@ -61,23 +64,58 @@ a {
 
 /*-----------sidebar------------ */
 #sidebar {
-    background-color: brown;
     grid-area: s;
+    margin-left: 80px;
+}
+
+/* #button-section {
+    background-color: #161616;
+    width: 90%;
+    border-radius: 15px;
+} */
+
+#background-sidebar {
+    padding: 35px;
+    border-radius: 25px;
+    background-color: #161616;
+    display: grid;
+    grid-template-columns: 1fr;
+    position: absolute;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%; */
+}
+
+.side-button {
+
+    width: 15rem;
+    height: 4rem;
+    font-size: 20px;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+#red-button {
+    background-color: #DD0000;
+    color: #FFFFFF;
 }
 
 /*-----------main-section------------ */
 main {
     grid-area: m;
+    margin-right: 80px;
+    margin-left: 90px;
 }
 
 #main-functions {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3%;
+    gap: 2%;
 }
 
 .main-function {
-    border: 1px solid gray;
+    border: 1px solid rgba(128, 128, 128, 0.167);
     border-radius: 18px;
     font-weight: 600;
 }
@@ -86,13 +124,19 @@ main {
     width: 100%;
 }
 
+small {
+    padding: 10px 25px;
+    border: 1px solid #161616;
+    border-radius: 8px;
+}
+
 .blogs {
     padding: 20px;
 }
 
 .information {
     display: flex;
-    gap: 3%;
+    gap: 5%;
 }
 
 /*-----------footer-area------------ */
@@ -103,7 +147,7 @@ footer {
     grid-area: f;
     color: #FFFFFF;
     text-align: center;
-    margin-top: 8%;
+    margin-top: 10%;
 }
 
 hr {
