@@ -136,7 +136,8 @@ small {
 /*-----------footer-area------------ */
 
 footer {
-    height: 444px;
+    font-size: 3rem;
+    padding-bottom: 5%;
     background-color: #161616;
     grid-area: f;
     color: #FFFFFF;
