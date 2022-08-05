@@ -32,7 +32,7 @@ body {
     grid-template-rows: 2.5fr 4fr 1.5fr;
     grid-template-areas:
         "b b b b b b b b b b b b"
-        "s s m m m m m m m m m m"
+        "s s s m m m m m m m m m"
         "f f f f f f f f f f f f"
     ;
 }
@@ -102,22 +102,107 @@ img {
 ---sidebar----
 -------------- */
 .sidebar {
-    background-color: var(--deep-gray);
+    margin-left: 70px;
+    gap: 1rem;
+    height: 20%;
+    width: 250px;
+    background-color: var(--black);
     grid-area: s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+button {
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.red-button {
+    color: var(--white);
+    background-color: var(--red);
 }
 
 /*-------------
 -----main-section----
 ------------------ */
 main {
-    background-color: var(--red);
     grid-area: m;
+    margin-left: 1rem;
 }
+
+.main-sections {
+    width: 50%;
+    margin-right: 80px;
+
+}
+
+.section {
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.blog-area {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--light-gray);
+    border-radius: 15px;
+}
+
+.blog-detail {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+span {
+    text-align: center;
+    border: 1px solid var(--deep-gray);
+}
+
+.blog-detail>p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.details {
+    width: 20%;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
 
 /*-------------
 ----footer-area------
 -------------------- */
 footer {
-    background-color: var(--light-gray);
+    background-color: var(--black);
     grid-area: f;
+    height: 350px;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>h3 {
+    margin-bottom: 50px;
+}
+
+hr {
+    margin-bottom: 50px;
+    width: 75%;
+    border: 1px solid #ffffff25;
+}
+
+.footer-information {
+    gap: 3rem;
+    display: flex;
+    justify-content: space-evenly;
 }
