@@ -209,3 +209,14 @@ hr {
     justify-content: center;
     gap: 3rem;
 }
+
+@media only screen and (max-width: 800px) {
+    .side-blogs {
+        background-color: white;
+    }
+
+    .blog {
+        display: flex;
+        flex-direction: row;
+    }
+}

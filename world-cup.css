@@ -20,16 +20,12 @@ body {
 }
 
 /* common styles */
-body {
-    font-family: 'Poppins', sans-serif;
-}
 
 .container {
-    width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: 0.5fr, repeat (12, 1fr);
-    grid-template-rows: 2.5fr 4fr 1.5fr;
+    grid-template-rows: 2fr 3fr 1.5fr;
     grid-template-areas:
         "b b b b b b b b b b b b"
         "s s s m m m m m m m m m"
@@ -41,9 +37,10 @@ body {
 ---top-banners---
 ------------------ */
 #top-banner {
+    width: 100%;
     grid-area: b;
     background-color: var(--black);
-    margin: 30px 80px 60px 80px;
+    margin: 30px 10rem 60px 10rem;
     border-radius: 30px;
 }
 
@@ -102,9 +99,9 @@ img {
 ---sidebar----
 -------------- */
 .sidebar {
-    margin-left: 70px;
+    margin-left: 10rem;
     gap: 1rem;
-    height: 20%;
+    height: 23%;
     width: 250px;
     background-color: var(--black);
     grid-area: s;
@@ -131,13 +128,14 @@ button {
 -----main-section----
 ------------------ */
 main {
+    margin-right: 10rem;
     grid-area: m;
     margin-left: 1rem;
 }
 
 .main-sections {
     width: 50%;
-    margin-right: 80px;
+    /* margin-right: 80px; */
 
 }
 
@@ -145,9 +143,12 @@ main {
     gap: 1rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .blog-area {
+    height: 350px;
+    width: 360px;
     display: flex;
     flex-direction: column;
     border: 1px solid var(--light-gray);
@@ -181,6 +182,7 @@ span {
 ----footer-area------
 -------------------- */
 footer {
+    margin-top: 80px;
     background-color: var(--black);
     grid-area: f;
     height: 350px;
@@ -205,4 +207,26 @@ hr {
     gap: 3rem;
     display: flex;
     justify-content: space-evenly;
+}
+
+/* ------------------
+     Media Queries
+------------------------- */
+@media only screen and (max-width: 900px) {
+
+    #top-banner {
+        width: 100%;
+        background-color: red;
+    }
+
+    .sidebar {
+        background-color: var(--white);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .container {
+        width: 100%;
+    }
 }
