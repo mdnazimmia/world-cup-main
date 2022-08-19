@@ -27,15 +27,15 @@ body {
 
 .top_banners {
     background-color: var(--black);
-    /* display: flex;
+    display: flex;
     justify-content: space-evenly;
-    align-items: center; */
+    align-items: center;
 }
 
 .top_banners-heading {
     color: var(--white);
-    display: flex;
-    justify-content: space-around;
+    /* display: flex;
+    justify-content: space-around; */
 }
 
 /*-----------
