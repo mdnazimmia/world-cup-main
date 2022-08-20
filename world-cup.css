@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@1,600&family=Gulzar&family=Inter:wght@500;600;800&family=Kanit&family=Karla:wght@500&family=Lato:wght@900&family=Lexend+Deca:wght@300;400;500&family=Lexend:wght@200;300;400&family=Montserrat:wght@600&family=Poppins:wght@400;500;600;700&family=Roboto&family=Roboto+Slab&family=Satisfy&family=Varela+Round&display=swap');
 
 body {
+    height: 100vh;
+    width: 100%;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -24,31 +26,166 @@ body {
 /* ------------
 ---top-banners---
 ------------------ */
+a {
+    text-decoration: none;
+    color: var(--white);
+}
 
 .top_banners {
+    height: 500px;
+    margin: 2rem 4rem 4rem 4rem;
+    border-radius: 8px;
     background-color: var(--black);
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .top_banners-heading {
+    margin: 0 9rem 6rem 3rem;
     color: var(--white);
-    /* display: flex;
-    justify-content: space-around; */
+}
+
+.top_banners-heading h1 {
+    font-size: 2.5rem;
+}
+
+.top_banners-paragraph p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 12px;
+}
+
+.top_banners-button button {
+    height: 3rem;
+    width: 9rem;
+    border-radius: 8px;
+    background-color: var(--red);
+}
+
+.top_banners-button i {
+    margin-left: .6rem;
+    color: var(--white);
+}
+
+.top_banners-image {
+    margin-top: 2rem;
+    margin-right: 3rem;
+}
+
+.top_banners-image img {
+    height: 90%;
+}
+
+
+
+
+.container {
+    grid-area: 2rem;
+    display: grid;
+    grid-template-columns: 0.5rem repeat(12, 1fr);
+    grid-template-rows: repeat(3 1fr);
+    grid-template-areas:
+        "s s s o o o t t t h h h"
+        "s s s f f f i i i m m m"
+        "s s s e e e g g g n n n"
+    ;
 }
 
 /*-----------
 ---sidebar----
 -------------- */
+.side_button {
+    align-items: center;
+    gap: 1.5rem;
+    background-color: var(--black);
+    grid-area: s;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.side_button button {
+    height: 40px;
+    width: 70%;
+}
+
+.red_button {
+    color: var(--white);
+    background-color: var(--red);
+}
 
 /*-------------
 -----main-section----
 ------------------ */
+.main_section-one {
+
+    grid-area: o;
+}
+
+.main_section-two {
+    grid-area: t;
+}
+
+.main_section-three {
+    grid-area: h;
+}
+
+.main_section-four {
+    grid-area: f;
+}
+
+.main_section-five {
+    grid-area: i;
+}
+
+.main_section-six {
+    grid-area: m;
+}
+
+.main_section-seven {
+    grid-area: e;
+}
+
+.main_section-eight {
+    grid-area: g;
+}
+
+.main_section-nine {
+    grid-area: n;
+}
+
+.border {
+    border: 1px solid var(--light-gray);
+}
+
+button {
+    padding: 2px 10px;
+    border-radius: 5px;
+    border: 1px solid var(--light-gray);
+}
+
+.main_section-details {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
 
 /*-------------
 ----footer-area------
 -------------------- */
+.footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: white;
+    background-color: var(--black);
+    text-align: center;
+}
+
 
 /* ------------------
      Media Queries
