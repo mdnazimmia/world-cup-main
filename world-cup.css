@@ -77,14 +77,12 @@ a {
     height: 90%;
 }
 
-
-
-
 .container {
-    grid-area: 2rem;
+    margin: 4rem;
+    gap: 1rem;
     display: grid;
-    grid-template-columns: 0.5rem repeat(12, 1fr);
-    grid-template-rows: repeat(3 1fr);
+    grid-template-columns: 1fr repeat (12, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
         "s s s o o o t t t h h h"
         "s s s f f f i i i m m m"
@@ -96,18 +94,22 @@ a {
 ---sidebar----
 -------------- */
 .side_button {
-    align-items: center;
-    gap: 1.5rem;
+    height: 21%;
+    border-radius: 8px;
     background-color: var(--black);
     grid-area: s;
-    display: flex;
-    flex-direction: column;
-    color: white;
+    padding: 1rem;
 }
 
-.side_button button {
-    height: 40px;
-    width: 70%;
+.side_button-section {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.side_button-section button {
+    height: 2.5rem;
+    width: 10rem;
 }
 
 .red_button {
@@ -157,6 +159,7 @@ a {
 
 .border {
     border: 1px solid var(--light-gray);
+    border-radius: 10px;
 }
 
 button {
@@ -172,6 +175,9 @@ button {
     align-items: flex-end;
 }
 
+.main_section-image img {
+    width: 100%;
+}
 
 /*-------------
 ----footer-area------
