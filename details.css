@@ -60,8 +60,8 @@ a {
     color: var(--white);
 }
 
-.heading>h1 {
-    font-size: 35px;
+.heading h2 {
+    font-weight: 500;
 }
 
 .heading>p {

@@ -33,7 +33,7 @@ a {
 
 .top_banners {
     height: 500px;
-    margin: 2rem 6rem 4rem 6rem;
+    margin: 2rem 6rem 6rem 6rem;
     border-radius: 20px;
     background-color: var(--black);
     display: flex;
@@ -58,8 +58,8 @@ a {
 
 .top_banners-button button {
     height: 3rem;
-    width: 9rem;
-    border-radius: 15px;
+    width: 150px;
+    border-radius: 5px;
     background-color: var(--red);
 }
 
@@ -196,15 +196,32 @@ span {
 ----footer-area------
 -------------------- */
 .footer {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    color: white;
+    margin-top: 6rem;
+    height: 250px;
+    color: var(--white);
     background-color: var(--black);
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
+.footer h2 {
+    font-weight: 500;
+}
+
+.footer hr {
+    width: 80%;
+    margin: 2rem 0;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer span {
+    font-size: 12px;
+    color: var(--light-gray);
+}
 
 /* ------------------
      Media Queries
