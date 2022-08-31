@@ -190,6 +190,8 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    font-size: 10px;
+
 }
 
 .main_section-image img {
