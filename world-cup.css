@@ -7,6 +7,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.top-btn {
+    border: none;
+}
+
 *:root {
     --black: #161616;
     --white: #FFFFFF;
